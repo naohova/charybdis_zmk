@@ -1,8 +1,6 @@
 #include "charybdis.dtsi"
-#include "charybdis_pmw3610.dtsi"
 
 &kscan0 {
-	compatible = "zmk,kscan-gpio-matrix";
   diode-direction = "col2row";
 	
 	col-gpios
@@ -13,12 +11,4 @@
 	      , <&pro_micro 8 (GPIO_ACTIVE_HIGH)> // COL4
         , <&pro_micro 9 (GPIO_ACTIVE_HIGH)> // COL5
     ;
-};
-
-// https://github.com/badjeff/zmk-pmw3610-driver
-/ {
-  trackball_listener {
-    compatible = "zmk,input-listener";
-    device = <&trackball>;
-  };
 };
