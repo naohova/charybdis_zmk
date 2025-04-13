@@ -81,5 +81,4 @@ include:
   # Firmware Reset
   - board: nice_nano_v2
     shield: settings_reset
-    format: reset
     artifact-name: firmware_reset_nano_v2
