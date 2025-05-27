@@ -1,19 +1,56 @@
-#include <behaviors/mouse_keys.dtsi>
+#include "keys_de_swiss.h"
 #include <dt-bindings/zmk/mouse.h>
+#include <behaviors/mouse_keys.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 
-#define U_TAPPING_TERM 200
-
 / {
-    chosen { zmk,matrix_transform = &default_transform; };
-};
+    /* input config for mouse move mode */
 
-/ {
-    combos {
+    trackball_listener {
+        compatible = "zmk,input-behavior-listener";
+        device = <&vtrackball>;
+        layers = <0 3 6>;
+        evt-type = <INPUT_EV_REL>;
+        x-input-code = <INPUT_REL_X>;
+        y-input-code = <INPUT_REL_Y>;
+        scale-multiplier = <1>;
+        scale-divisor = <2>;
+
+        // bindings = <&ib_toggle_layer 7>;
+    };
+
+    /* input config for snipe mode */
+
+    trackball_snipe_listener {
+        compatible = "zmk,input-behavior-listener";
+        device = <&vtrackball>;
+        layers = <10>;
+        evt-type = <INPUT_EV_REL>;
+        x-input-code = <INPUT_REL_X>;
+        y-input-code = <INPUT_REL_Y>;
+        scale-multiplier = <1>;
+        scale-divisor = <4>;
+    };
+
+    /* input config for mouse scroll mode */
+
+    trackball_scroll_listener {
+        compatible = "zmk,input-behavior-listener";
+        device = <&vtrackball>;
+        layers = <9>;
+        evt-type = <INPUT_EV_REL>;
+        x-input-code = <INPUT_REL_MISC>;
+        y-input-code = <INPUT_REL_WHEEL>;
+        y-invert;
+        bindings = <&ib_wheel_scaler 1 14>;
+    };
+
+     combos {
         compatible = "zmk,combos";
 
         LeftClickRight {
