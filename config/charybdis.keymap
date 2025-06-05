@@ -8,6 +8,8 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/outputs.h>
 
+#define U_TAPPING_TERM 200
+
 
 // / {
 //     chosen { zmk,matrix_transform = &default_transform; };
@@ -174,7 +176,7 @@
             >;
         };
 
-NAV {
+        NAV {
             bindings = <
 &bootloader  &trans    &trans    &trans     &trans  &bt BT_CLR             &bt BT_CLR_ALL   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3   &bt BT_SEL 4     &bootloader
 &sys_reset   &trans    &kp UP    &trans     &trans  &trans                 &kp N1       &trans  &trans  &trans   &trans     &sys_reset
@@ -206,11 +208,11 @@ NAV {
 
         AUTO-MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                        &mkp LCLK  &trans  &mkp RCLK    &trans  &trans &trans  &trans &trans
+&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                        &mkp LCLK  &trans  &mkp RCLK    &trans  &trans  &trans  &trans &trans
             >;
         };
 
@@ -220,7 +222,7 @@ NAV {
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans &trans  &trans &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans  &trans &trans
             >;
         };
     };
