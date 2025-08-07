@@ -1,32 +1,32 @@
 layout: {zmk_keyboard: charybdis}
 layers:
   BASE: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACK SPACE, '`', Q, W, E, R, T, Y, U, I, O, P, '[', TAB, A, S, D, F, G, H, J, K, L, ;, '''', SCROLL,
-    Z, X, C, V, B, N, M, ',', ., /, SCROLL, LGUI, SPACE, NAV, SYMNUM, LCTRL, NAV, RET, LSHFT]
+    Z, X, C, V, B, N, M, ',', ., /, SCROLL, LGUI, SPACE, NAV, SYMNUM, LCTRL, LEFT ALT, RET, LSHFT]
   NAV:
-  - BOOT LDR
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT CLR
-  - BT CLR ALL
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - BOOT LDR
-  - '&sys_reset'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - UP
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '1'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&sys_reset'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT
   - DOWN
@@ -72,7 +72,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT CLR
+  - {t: ▽, type: trans}
   - '!'
   - '@'
   - '#'
@@ -86,8 +86,8 @@ layers:
   - DEL
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - BT PRV
-  - BT NXT
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - _
@@ -97,8 +97,8 @@ layers:
   - {t: \, h: RIGHT GUI}
   - '`'
   - {t: ▽, type: trans}
-  - OUT TOG
-  - BOOT LDR
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -135,24 +135,24 @@ layers:
   - F2
   - F3
   - F4
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - BT CLR
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - DEL
   - F5
   - F6
   - F7
   - F8
-  - OUT TOG
+  - {t: ▽, type: trans}
   - PLAY PAUSE
   - VOLUME DOWN
   - VOLUME UP
   - MUTE
-  - LALT
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - F9
@@ -161,8 +161,8 @@ layers:
   - DEV TOOLS
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - NEXT
+  - PREV
   - {t: ▽, type: trans}
   - {t: BASE, h: toggle}
   - {t: ▽, type: trans}
