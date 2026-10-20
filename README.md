@@ -1,7 +1,7 @@
 [![.github/workflows/build.yml](https://github.com/280Zo/charybdis-wireless-mini-zmk-firmware/actions/workflows/build.yml/badge.svg)](https://github.com/280Zo/charybdis-wireless-mini-zmk-firmware/actions/workflows/build.yml)
 
 ## Intro
-
+test
 This repository offers pre-configured ZMK firmware designed for Wireless Charybdis keyboards, supporting both the ubiquitous QWERTY layout and the optimized Colemak DH layout. You can choose from two configurations:
 
 - Bluetooth and USB
