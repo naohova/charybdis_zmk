@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: charybdis}
 layers:
-  BASE: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACK SPACE, '`', Q, W, E, R, T, Y, U, I, O, P, '[', TAB, A, S, D, F, G, H, J, K, L, ;, '''', SCROLL,
+  BASE: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', BACK SPACE, '`', Q, W, E, R, T, Y, U, I, O, P, '[', TAB, A, S, D, F, G, H, J, K, L, ;, '''', AUTO-MOUSE,
     Z, X, C, V, B, N, M, ',', ., /, SCROLL, LGUI, SPACE, NAV, SYMNUM, LCTRL, LEFT ALT, RET, LSHFT]
   NAV:
   - {t: ▽, type: trans}
@@ -210,7 +210,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -267,18 +267,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
