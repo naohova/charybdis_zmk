@@ -148,7 +148,7 @@ layers:
   - F7
   - F8
   - {t: ▽, type: trans}
-  - PLAY PAUSE
+  - PP
   - VOLUME DOWN
   - VOLUME UP
   - MUTE
@@ -308,5 +308,3 @@ combos:
   k: '}'
 - p: [8, 9]
   k: DELETE
-- p: [17, 18]
-  k: CAPS WORD
